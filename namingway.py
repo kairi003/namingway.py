@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 
+import sys
 import discord
 from discord.ext import commands
 import random
 from typing import Optional
 
-TOKEN = 'OTYwODk1NDU2OTQ1MjYyNzI1.YkxFoQ.-gw8trUHzJPPVCTnbYSijgfsXjw'
+TOKEN = sys.argv[1]
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix='!', intents=intents)
